@@ -1,4 +1,6 @@
+import uvicorn
 from fastapi import FastAPI, Request
+from pyproj import Transformer
 
 app = FastAPI()
 
@@ -23,3 +25,9 @@ def liste():
 @app.get("/api/add")
 def addiere(a: int, b: int):
     return {"sum": a+b}
+
+@app.get("/api/transformation")
+def transformiere(E: float, N: float):
+    transformer = Transformer.from_crs("epsg:2056", "epsg:4326")
+    resultat = transformer.transform(E,N)
+    return {"koordinaten": f"{resultat[0]}, {resultat[1]}"}
