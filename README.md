@@ -12,7 +12,7 @@
 <!--
 ## VERCEL FUNKTIONIERT NICHT
 koordinatentransformation.vercel.app
-https://github.com/flaviaackermann/webservice-vercel_Loesung
+https://vercel.com/flaviaackermanns-projects/koordinatentransformation/settings/domains
 https://vercel.com/flaviaackermanns-projects/koordinatentransformation/
 -->
 
